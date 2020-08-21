@@ -1,7 +1,7 @@
 Given the names and grades for each student in a class of n students, store them in a nested list and print the name(s) of any student(s) having the second lowest grade.
 
 Note: If there are multiple students with the second lowest grade, order their names alphabetically and print each name on a new line.
-
+'''
 if __name__ == '__main__':
     l = []
     for _ in range(int(input())):
@@ -18,14 +18,13 @@ for n,s  in l:
 
 for x in sorted(names):
     print(x)
+'''    
     
     
     
     
     
     
-    
- '''
 if __name__ == '__main__':
     d = dict()
     for _ in range(int(input())):
@@ -55,4 +54,4 @@ for n,s in d.items():
 na.sort()        
 for i in na:
     print(i)
-'''
+
