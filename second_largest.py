@@ -14,4 +14,6 @@ print(max(arr))
 ''' 
 under logic part this can also be used:
 
-for i in arr:
+for i in arr:  
+    if i == win:
+        arr.remove(i)
