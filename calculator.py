@@ -11,6 +11,9 @@ root.title('Calculator')
 i = 0
 # Receives the digit as parameter and display it on the input field
 def get_variables(num):
+    entire_string = display.get()
+    if entire_string == 'Error':
+        clear_all()
     global i
     display.insert(i,num)
     i+=1
@@ -41,6 +44,8 @@ def clear_all():
 #Function which works like backspace
 def undo():
     entire_string = display.get()
+    if entire_string == 'Error':
+        return
     if len(entire_string):
         new_string = entire_string[:-1]
         clear_all()
