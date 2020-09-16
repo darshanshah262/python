@@ -8,10 +8,12 @@ def collatz(number):
         return res
 
 
-try:
-    n =  int(input('Enter a number'))
-    while n!=1:
-        n = collatz(n)
-except:
-    print('Enter a integer number')
+while True:
+    try:
+        n =  int(input('Enter a number'))
+        while n!=1:
+            n = collatz(n)
+        break
+    except:
+        print('Enter a integer number')
     
