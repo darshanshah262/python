@@ -8,6 +8,7 @@ sample input
 o/p
 True
 False
+matching error is when two symbols( * or + )repeat continuously like ++ or ** or +* or *+
 '''
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 import re
