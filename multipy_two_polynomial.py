@@ -10,16 +10,25 @@ Second polynomial:
 2 + 0x1 + 4x2
 Product polynomial:
 2 + 0x1 + 10x2 + 4x3 + 12x4 + 8x5
-'''
 
+Alternate solution
 class Solution:
 	def polyMultiply(self, Arr1, Arr2, M, N):
 		# code here
 		l = [0]*(M+N-1)
-		for i in range(len(Arr1)):
-		    for j in range(len(Arr2)):
-		        l[i+j] += Arr1[i] * Arr2[j]
-		return l
+		for ind,i in enumerate(Arr1):
+            for jnd,j in enumerate(Arr2):
+                l[ind+jnd] += i*j
+	    return l
+'''
+class Solution:
+    def polyMultiply(self,Arr1,Arr2,M,N):
+        l = [0]*(M+N-1)
+        for i in range(len(Arr1)):
+            for j in range(len(Arr2)):
+                l[i+j] += Arr1[i] * Arr2[j]
+        return l
+
 
 M,N = map(int,input().split())
 M = int(M)
