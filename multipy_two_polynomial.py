@@ -26,6 +26,7 @@ class Solution:
         l = [0]*(M+N-1)
         for i in range(len(Arr1)):
             for j in range(len(Arr2)):
+                print(i+j,Arr1[i]*Arr2[j])
                 l[i+j] += Arr1[i] * Arr2[j]
         return l
 
